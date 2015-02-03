@@ -1,0 +1,170 @@
+/**
+ * Beige theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// ---------------------------------------------
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Include theme-specific fonts
+@font-face {
+	font-family: 'Din regular';
+	src: url('../../lib/font/din_regular.ttf') format('truetype');
+
+	font-weight: normal;
+	font-style: normal;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+
+// Override theme settings (see ../template/settings.scss)
+$mainColor: #000;
+$headingColor: #f8832b;
+$headingTextShadow: none;
+$headingMargin: 0 0 40px 0;
+$backgroundColor: #fff;
+$headingFont: 'Din regular';
+$headingTextTransform: none;
+$mainFont: 'Din regular';
+$linkColor: #8b743d;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: rgba(79, 64, 28, 0.99);
+$heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 20px 20px rgba(0,0,0,.15);
+$footerHeight: 42px;
+
+// Theme template ------------------------------
+@import "../template/theme";
+
+// Slides point
+.reveal p {
+  text-align: left;
+  font-style: normal;
+  font-size: 0.9em;
+  float: left;
+  clear: both;
+}
+.reveal ul {
+    list-style-type: none;
+}
+
+.reveal ul li:before {
+    content:"-"; position:relative; left:-5px; color: #f8832b }
+
+.reveal ul li {
+    text-indent:-5px;
+    list-style: none;
+    float: left;
+    line-height: 1.6em;
+    clear: both;
+}
+.reveal ol li {
+  font-size: 0.8em;
+}
+
+.reveal pre {
+  margin: 0;
+  float: left;
+  width: 100%;
+}
+
+.reveal pre code {
+  max-height: 600px;
+}
+
+.reveal .logo {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  z-index: 10;
+}
+
+.reveal .black-bar {
+//  background-color: #000000;
+//  height: 82px;
+//  width: 242%;
+//  position: absolute;
+//  bottom: 0;
+//  z-index: 10;
+//  margin-left: -71%;
+//  margin-bottom: -4%;
+}
+
+.reveal h1 {
+  font-size: 3.2em;
+}
+
+.reveal h1 {
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
+  color: #fff1ae !important;
+  width: 100%;
+  margin-left: -100% !important;
+  padding-left: 100%;
+  padding-right: 71%;
+  z-index: -1;
+  position: absolute;
+  height: 1550%;
+  margin-top: -16% !important;
+  padding-top: 18%;
+  background: #f1e767;
+  background: -moz-linear-gradient(45deg,  #f1e767 0%, #ef7f43 63%);
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#f1e767), color-stop(63%,#ef7f43));
+  background: -webkit-linear-gradient(45deg,  #f1e767 0%,#ef7f43 63%);
+  background: -o-linear-gradient(45deg,  #f1e767 0%,#ef7f43 63%);
+  background: -ms-linear-gradient(45deg,  #f1e767 0%,#ef7f43 63%);
+  background: linear-gradient(45deg,  #f1e767 0%,#ef7f43 63%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#ef7f43',GradientType=1 );
+}
+
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+  margin: 0 0 10px 0;
+  color: #f8832b;
+  font-family: 'Din regular';
+  font-weight: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-transform: none;
+  text-shadow: none;
+  word-wrap: break-word;
+  clear: both;
+}
+
+.reveal h2 {
+  margin-bottom: 10px;
+}
+
+.reveal h6 {
+  margin-bottom: 14px;
+  line-height: 1em;
+  font-size: 0.6em;
+  float: left;
+  background-color: #000000;
+  padding: 6px 8px 2px 8px;
+  border-radius: 3px;
+  box-shadow: -7px -5px 6px 0px rgba(202, 57, 7, 0.47);
+}
+
+.reveal h5 {
+  line-height: 1.2em;
+  font-size: 0.6em;
+  float: left;
+  color: #111111;
+}
+.reveal blockquote {
+  float:left;
+  width: auto;
+}
+.reveal section img {
+  border: 0;
+  box-shadow: none;
+  zoom: none;
+}
+
+
